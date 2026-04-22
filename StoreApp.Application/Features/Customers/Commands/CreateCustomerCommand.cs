@@ -33,11 +33,11 @@ namespace StoreApp.Application.Features.Customers.Commands
             {
                 FirstName = request.FirstName,
                 LastName = request.LastName,
-                Email = request.Email!,
-                Phone = request.Phone!,
-                City = request.City!,
-                State = request.State!,
-                ZipCode = request.ZipCode!,
+                Email = request.Email ?? string.Empty,
+                Phone = request.Phone ?? string.Empty,
+                City = request.City ?? string.Empty,
+                State = request.State ?? string.Empty,
+                ZipCode = request.ZipCode ?? string.Empty,
                 CreatedDate = DateTime.UtcNow
             };
 
